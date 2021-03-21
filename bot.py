@@ -2,14 +2,16 @@ import discord
 from discord.ext import commands
 from config import settings
 
-prefix = settings['PREFIX'] # Получение переменной "prefix" из нашего config.py
 
 
 
 TOKEN = input("Введи токен: ")
 
+PREFIX = input("Введи prefix: ")
 
-client = commands.Bot(command_prefix = settings['PREFIX']) # Создаем переменную client используемую для всех наших взаимодействий с ботом
+prefix = (PREFIX)
+
+client = commands.Bot(command_prefix = (PREFIX)) # Создаем переменную client используемую для всех наших взаимодействий с ботом
 
 
 client.remove_command('help') # Удаляем изначальную команду "help"
