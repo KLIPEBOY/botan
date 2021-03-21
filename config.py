@@ -1,5 +1,5 @@
 settings = {
-	'TOKEN': 'ODIyODk3NDIwNDY3NDM3NTk5.YFY88Q.nFaKZ1PqglVwL22eICCqFAqZQSs', # Получение токена - https://prnt.sc/uofhur
+	'TOKEN': 'ODIyODk3NDIwNDY3NDM3NTk5.YFY88Q.3F7nRysVv72HF4LX0olJv2NF0q0', # Получение токена - https://prnt.sc/uofhur
 	'NAME BOT': 'BOT NAME', # Имя вашего бота
 	'ID': 'BOT ID', # Получение ID - https://prnt.sc/uofik2
 	'PREFIX': '?', # Префикс
