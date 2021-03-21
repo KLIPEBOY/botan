@@ -5,9 +5,8 @@ from config import settings
 
 
 
-TOKEN = input("Введи токен: ")
 
-PREFIX = input("Введи prefix: ")
+PREFIX = $
 
 prefix = (PREFIX)
 
@@ -220,6 +219,6 @@ async def ДС(ctx):
 
 
 
-
+TOKEN = 
 
 client.run(TOKEN)
