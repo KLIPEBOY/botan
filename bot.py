@@ -14,15 +14,14 @@ client = commands.Bot(command_prefix = settings['PREFIX']) # Создаем пе
 
 client.remove_command('help') # Удаляем изначальную команду "help"
 
-client.remove_command('ban') # Удаляем изначальную команду "help"
 
 @client.event # Объявление события
 async def on_ready(): # Объявление асинхронной функции
 
-    print (f" {settings['NAME BOT']} запущен!!!!") # Сообщение в консоль при готовности бота
+    print (f"{settings['NAME BOT'] Запущен!!!}") # Сообщение в консоль при готовности бота
 
 
-    await client.change_presence(status=discord.Status.online, activity=discord.Streaming(name=f'HVH BOYS', url='https://www.youtube.com/watch?v=fQIanvUye4o')) # Статус бота (Для примера выбрал стриминг)
+    await client.change_presence(status=discord.Status.online, activity=discord.Streaming(name=f'𝙀𝙨𝙨𝙚𝙡𝙡 𝙩𝙚𝙖𝙢', url='https://www.youtube.com/watch?v=fQIanvUye4o')) # Статус бота (Для примера выбрал стриминг)
     # Cообщение/команда которая отображается в статусе у бота (https://prnt.sc/uog6r6), меняется с помощью: name=f'{prefix}help' (Пример: name=f'Hello world!') (https://prnt.sc/uog9hx)
 
 # Пример команды с выводом результата через обычное сообщение:
@@ -112,7 +111,7 @@ async def unban(ctx, *, member):
             emb = discord.Embed( title = 'Участник Разбанен!', description = f'Пользователь {user.mention}  был Разабанен ', colour = discord.Color.red() )
             emb.set_author( name = client.user.name )
             emb.set_footer( text = ctx.author.name, icon_url = ctx.author.avatar_url )
-            emb.set_thumbnail(url = client.user.avatar_url)
+            emb.set_thumbnail(url = client.user.avatar_url) 
 
             await ctx.send( embed = emb )
 
@@ -185,3 +184,40 @@ async def kick_error(ctx, goodbye):
 		emb.set_footer( icon_url = client.user.avatar_url, text = f"{settings['OWNER NAME']} © Copyright 2021 | Все права защищены"   )
 		await ctx.send ( embed = emb)
 		print(f"[Logs:Error] [Ошибка доступа] Пользователь [{ctx.author}] попытался кикнуть | {prefix}kick")
+
+
+
+
+@client.command()
+async def очистить(ctx, amount=1000):
+    await ctx.channel.purge(limit=amount) #очищаем
+    print(f"[Logs:moderation] Пользователь [{ctx.author}]  очистил чат!")    
+
+        
+        
+@client.command()
+async def ДС(ctx):
+    embed = discord.Embed(
+        title="Перейди на нашь дс",
+        description="",
+        url='https://discord.gg/dsWJCghF2r',
+        colour = discord.Color.purple() 
+    )
+    await ctx.send(embed=embed)        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+client.run(TOKEN)
