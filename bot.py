@@ -137,9 +137,9 @@ async def ДС(ctx):
         title="Перейди на нашь дс",
         description="",
         url='https://discord.gg/dsWJCghF2r',
+        colour = discord.Color.purple() 
     )
     await ctx.send(embed=embed)        
-
 
 
 
