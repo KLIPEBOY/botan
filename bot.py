@@ -90,7 +90,7 @@ async def __kick(ctx, member: discord.Member, *, reason = None): # Асинхр�
     #Аргументы: reason = None - "reason" ----- может быть любой текст, но для удобства использовал reason, "None" - значение по умолчанию
     await ctx.message.add_reaction('✅') # Добавляет реакцию к сообщению с командой
     await member.kick( reason = reason ) # Кикнуть пользователя по причине (Преобразует причину бота в причину дискорда)
-    emb = discord.Embed( title = 'kick', description = f'Пользователь {member}  был кикнут по причине { reason } ', colour = discord.Color.red() )
+    emb = discord.Embed( title = 'Участник кикнут!', description = f'Пользователь {member}  был кикнут по причине { reason } ', colour = discord.Color.red() )
     emb.set_author( name = client.user.name )
     emb.set_footer( text = ctx.author.name, icon_url = ctx.author.avatar_url )
     emb.set_thumbnail(url = client.user.avatar_url)
