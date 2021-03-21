@@ -219,6 +219,6 @@ async def ДС(ctx):
 
 
 
-TOKEN = 
+TOKEN = os.environ.get('BOT_TOKEN')
 
 client.run(TOKEN)
