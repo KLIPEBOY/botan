@@ -18,7 +18,7 @@ client.remove_command('help') # Удаляем изначальную коман
 @client.event # Объявление события
 async def on_ready(): # Объявление асинхронной функции
 
-    print (f"{settings['NAME BOT'] Запущен!!!}") # Сообщение в консоль при готовности бота
+    print (f"{settings['NAME BOT']} Запущенн!!!!")
 
 
     await client.change_presence(status=discord.Status.online, activity=discord.Streaming(name=f'𝙀𝙨𝙨𝙚𝙡𝙡 𝙩𝙚𝙖𝙢', url='https://www.youtube.com/watch?v=fQIanvUye4o')) # Статус бота (Для примера выбрал стриминг)
