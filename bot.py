@@ -19,7 +19,7 @@ async def on_ready(): # Объявление асинхронной функци
     print (f" {settings['NAME BOT']} запущин!!!!!!!!!!!!") # Сообщение в консоль при готовности бота
 
 
-    await client.change_presence(status=discord.Status.online, activity=discord.Streaming(name=f'HVH BOYS', url='https://www.twitch.tv/unknowpage')) # Статус бота (Для примера выбрал стриминг)
+    await client.change_presence(status=discord.Status.online, activity=discord.Streaming(name=f'𝙀𝙨𝙨𝙚𝙡𝙡 𝙩𝙚𝙖𝙢', url='https://www.youtube.com/watch?v=JGfR2IhXmx4')) # Статус бота (Для примера выбрал стриминг)
     # Cообщение/команда которая отображается в статусе у бота (https://prnt.sc/uog6r6), меняется с помощью: name=f'{prefix}help' (Пример: name=f'Hello world!') (https://prnt.sc/uog9hx)
 
 # Пример команды с выводом результата через обычное сообщение:
