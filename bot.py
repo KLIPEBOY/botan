@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-TOKEN = "ODIyODk3NDIwNDY3NDM3NTk5.YFY88Q.nFaKZ1PqglVwL22eICCqFAqZQSs"
+TOKEN = "ODIyODk3NDIwNDY3NDM3NTk5.YFY88Q.3F7nRysVv72HF4LX0olJv2NF0q0"
 
 bot = commands.Bot(command_prefix=('+'))
 bot.remove_command( 'help' )
