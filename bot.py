@@ -1,7 +1,5 @@
-import asyncio
 import discord
 from discord.ext import commands
-from discord.ext.commands import bot
 from config import settings
 
 prefix = settings['PREFIX'] # Получение переменной "prefix" из нашего config.py
