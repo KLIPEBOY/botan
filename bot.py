@@ -13,9 +13,7 @@ def main():
     markup.add(key2)
     return markup
 
-@bot.message_handler(commands=['start'])
-def start(message):
-    bot.send_message(message.chat.id, 'Привет', reply_markup=main())
+
 
 @bot.message_handler(content_types=['text'])
 def cont(message):
