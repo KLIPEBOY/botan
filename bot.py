@@ -1,13 +1,13 @@
 import discord
-import os
 from discord.ext import commands
 from config import settings
 
 
 
 
+TOKEN = input("Введи токен: ")
 
-PREFIX = $
+PREFIX = input("Введи prefix: ")
 
 prefix = (PREFIX)
 
@@ -220,6 +220,6 @@ async def ДС(ctx):
 
 
 
-TOKEN = os.environ.get('BOT_TOKEN')
+
 
 client.run(TOKEN)
